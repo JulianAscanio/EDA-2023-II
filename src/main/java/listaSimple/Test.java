@@ -21,9 +21,8 @@ public class Test {
             System.out.println("El valor " + valorBuscar + " no está en la lista.");
         }
 
-        list.eliminar(11);
-
         System.out.println("Lista Actualizada.");
+        list.eliminar(11);
         list.mostrar();
 
     }

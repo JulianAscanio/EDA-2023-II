@@ -66,6 +66,7 @@ public class ListaSimple {
         }
         if (inicio.getDato() == dato) {
             inicio = inicio.getSiguiente();
+            return;
         }
 
         Nodo anterior = null;
@@ -78,7 +79,7 @@ public class ListaSimple {
         if (aux != null) {
             anterior.setSiguiente(aux.getSiguiente());
         }else{
-            System.out.println("No se encontro.");
+            System.out.println("El elemento " + dato + " no se encontró en la lista.");
         }
     }
 
