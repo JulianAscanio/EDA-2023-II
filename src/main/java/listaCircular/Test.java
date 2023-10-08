@@ -1,7 +1,7 @@
-
 package listaCircular;
 
 public class Test {
+
     public static void main(String[] args) {
         ListaCircular list = new ListaCircular();
         list.addInicio(12);
@@ -11,6 +11,6 @@ public class Test {
         list.addInicio(11);
         list.addFinal(20);
 
-        list.mostrar(16);
+        list.mostrar();
     }
 }

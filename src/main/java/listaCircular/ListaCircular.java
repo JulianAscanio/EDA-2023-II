@@ -42,13 +42,39 @@ public class ListaCircular {
     }
 
     void addInicio(int dato) {
-        
+        Nodo nuevo = new Nodo();
+        nuevo.setDato(dato);
+        if (inicio == null) {
+            inicio = nuevo;
+            ultimo = nuevo;
+            ultimo.setSiguiente(inicio);
+        }else{
+            nuevo.setSiguiente(inicio);
+            inicio = nuevo;
+            ultimo.setSiguiente(inicio);
+        }
     }
 
     void addFinal(int dato) {
+        Nodo nuevo = new Nodo();
+        nuevo.setDato(dato);
+        if (inicio == null) {
+            inicio = nuevo;
+            ultimo = nuevo;
+            ultimo.setSiguiente(inicio);
+        }else{
+            ultimo.setSiguiente(nuevo);
+            ultimo = nuevo;
+            ultimo.setSiguiente(inicio);
+        }
     }
 
-    void mostrar(int dato) {
+    void mostrar() {
+        Nodo aux = inicio;
+        while (aux != null) {
+            System.out.println("["+ aux.getDato()+"]");
+            aux = aux.getSiguiente();
+        }
     }
 
 }

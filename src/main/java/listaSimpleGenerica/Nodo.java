@@ -1,17 +1,9 @@
-package listaCicularGenerica;
+package listaSimpleGenerica;
 
 public class Nodo<A> {
 
     private A dato;
     private Nodo<A> siguiente;
-
-    public Nodo() {
-    }
-
-    public Nodo(A dato, Nodo<A> siguiente) {
-        this.dato = dato;
-        this.siguiente = siguiente;
-    }
 
     /**
      * @return the dato
@@ -40,4 +32,5 @@ public class Nodo<A> {
     public void setSiguiente(Nodo<A> siguiente) {
         this.siguiente = siguiente;
     }
+
 }

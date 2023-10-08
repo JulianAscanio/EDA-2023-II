@@ -1,17 +1,17 @@
-package listaCicularGenerica;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package listaDobleGenerica;
 
+/**
+ *
+ * @author Estudiante
+ */
 public class Nodo<A> {
-
     private A dato;
     private Nodo<A> siguiente;
-
-    public Nodo() {
-    }
-
-    public Nodo(A dato, Nodo<A> siguiente) {
-        this.dato = dato;
-        this.siguiente = siguiente;
-    }
+    private Nodo<A> anterior;
 
     /**
      * @return the dato
@@ -39,5 +39,19 @@ public class Nodo<A> {
      */
     public void setSiguiente(Nodo<A> siguiente) {
         this.siguiente = siguiente;
+    }
+
+    /**
+     * @return the anterior
+     */
+    public Nodo<A> getAnterior() {
+        return anterior;
+    }
+
+    /**
+     * @param anterior the anterior to set
+     */
+    public void setAnterior(Nodo<A> anterior) {
+        this.anterior = anterior;
     }
 }
