@@ -26,7 +26,5 @@ public class Test {
         c.encolar(5);
 
         r.eliminarValor(c, 3);
-
-        //System.out.println("Dato: "+c);
     }
 }
